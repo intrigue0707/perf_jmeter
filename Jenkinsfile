@@ -1,4 +1,4 @@
-node {
+pipeline {
  stage('clone git repo'){
  git 'https://github.com/intrigue0707/perf_jmeter.git'
  }
