@@ -1,5 +1,6 @@
 pipeline {
   agent any
+  stages{
  stage('configure') {
 
         sh "mkdir $WORKSPACE/$BUILD_NUMBER/"
@@ -19,3 +20,4 @@ pipeline {
  archiveArtifacts artifacts: '$WORKSPACE/$BUILD_NUMBER/Shophizer.jtl, $WORKSPACE/$BUILD_NUMBER/HtmlReport/index.html'
     } 
   }
+}
