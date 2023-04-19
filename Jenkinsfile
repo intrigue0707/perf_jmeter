@@ -5,7 +5,7 @@ pipeline {
    steps{
  sh "mkdir /tmp/reporting"
  sh "cd C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/jmeter/apache-jmeter-5.5/bin"
-      sh "jmeter.save.saveservice.output_format=xml -n -t ../Shophizer.jmx -l /tmp/reporting/Shophizer.jtl -e -o /tmp/reports/HtmlReport"
+      sh  "-n -t ../Shophizer.jmx -l /tmp/reporting/Shophizer.jtl -e -o /tmp/reporting/HtmlReport"
    }}
  stage('publish results'){
    steps{
