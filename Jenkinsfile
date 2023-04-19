@@ -1,6 +1,9 @@
 pipeline {
   agent any
   stages{
+    stage("configure") {
+      steps{
+        sh "mkdir $WORKSPACE/$BUILD_NUMBER/"}}
  stage('run test'){
    steps{
  sh "mkdir /tmp/report"
