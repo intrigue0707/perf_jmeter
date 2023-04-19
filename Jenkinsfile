@@ -19,4 +19,3 @@ pipeline {
  archiveArtifacts artifacts: '$WORKSPACE/$BUILD_NUMBER/Shophizer.jtl, $WORKSPACE/$BUILD_NUMBER/HtmlReport/index.html'
     } 
   }
-}
